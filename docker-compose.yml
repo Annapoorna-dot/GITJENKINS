@@ -1,0 +1,11 @@
+version: '3'
+services:
+  nginx:
+    image: anu
+    ports:
+      - "80:80"
+    volumes:
+      - nginx-data:/var/opt/nginx
+
+volumes:
+  nginx-data:
